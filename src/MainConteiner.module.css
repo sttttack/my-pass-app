@@ -1,0 +1,282 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  justify-content: space-around;
+  width: 343px;
+  height: 423px;
+  background-color: #24232c;
+}
+
+.impt {
+  margin-top: 64px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.cop {
+  display: none;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #817d92;
+  font-family: "JetBrains Mono";
+}
+
+.strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 311px;
+  height: 56px;
+  background-color: #18171f;
+  font-family: "JetBrains Mono";
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.strength p {
+  color: #817d92;
+}
+
+.diff {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.diff p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #e6e5ea;
+  margin-right: 8px;
+  margin-right: 15px;
+  text-align: right;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 8px;
+  width: 311px;
+  margin-right: 10px;
+  background: #18171f;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  background: #e6e5ea;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+
+.rangeDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+  width: 100%;
+}
+
+.rangeDisplay p {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e6e5ea;
+}
+
+.rangeDisplay p:nth-child(2) {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #a4ffaf;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 311px;
+  height: 56px;
+  background-color: #a4ffaf;
+  background-image: url("./images/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position-x: 195px;
+  background-position-y: center;
+  color: #24232c;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #a4ffaf;
+  background-color: #24232c;
+  border: 2px solid #a4ffaf;
+}
+
+.paragraph {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #e6e5ea;
+  width: auto;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 343px;
+  height: 64px;
+  background-color: #24232c;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 15.5px;
+}
+
+.checkmarks {
+  display: flex;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e6e5ea;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  height: 144px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  color: currentColor;
+  font: inherit;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #e6e5ea;
+  margin-right: 24px;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("./images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #a4ffaf;
+  border: none;
+}
+
+.pss {
+  color: #e6e5ea;
+  opacity: 0.25;
+}
+
+.gen {
+  position: relative;
+  left: -14px;
+  font-family: "JetBrains Mono";
+  border: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .mainDiv {
+    width: 540px;
+    height: 528px;
+    align-items: center;
+    padding-left: 0;
+    font-size: 18px;
+  }
+
+  .conteiner {
+    width: 540px;
+    height: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 32px;
+  }
+
+  .strength {
+    width: 476px;
+    height: 72px;
+  }
+
+  .btn {
+    width: 476px;
+    height: 65px;
+    background-position-x: 280px;
+  }
+
+  .diff p {
+    font-size: 24px;
+  }
+
+  .rangeDisplay {
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .impt {
+    margin-top: 133px;
+  }
+
+  input[type="range"] {
+    width: 476px;
+  }
+
+  .checkbox {
+    margin-left: -164px;
+  }
+
+  .checkbox span {
+    font-size: 18px;
+  }
+
+  .copyDiv {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .cop {
+    display: block;
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #a4ffaf;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .impt {
+    margin-top: 5%;
+  }
+}
