@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sttttack/my-pass-app/static/css/main.66340699.css",
+    "main.js": "/sttttack/my-pass-app/static/js/main.c22ca019.js",
+    "index.html": "/sttttack/my-pass-app/index.html",
+    "static/media/copy.svg": "/sttttack/my-pass-app/static/media/copy.c00fcf20217a486689713679f8ec9e05.svg",
+    "static/media/icon-arrow-right.svg": "/sttttack/my-pass-app/static/media/icon-arrow-right.6f919c9ee4525a9948a9.svg",
+    "static/media/icon-check.svg": "/sttttack/my-pass-app/static/media/icon-check.c0e2bb9365c6d9e8bbe4.svg",
+    "main.66340699.css.map": "/sttttack/my-pass-app/static/css/main.66340699.css.map",
+    "main.c22ca019.js.map": "/sttttack/my-pass-app/static/js/main.c22ca019.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66340699.css",
+    "static/js/main.c22ca019.js"
+  ]
+}
