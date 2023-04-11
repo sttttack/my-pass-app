@@ -32,16 +32,21 @@ export default function MainConteiner() {
       symbols ? symbolChars : "",
     ].join("");
 
-    for (let i = 0; i < inputValue; i++) {
-      let randomNumber = Math.floor(Math.random() * allChars.length);
-      newPassword += allChars[randomNumber];
+    if (!upperCase && !lowerCase && !numbers && !symbols) {
+      newPassword = "";
+    } else {
+      for (let i = 0; i < inputValue; i++) {
+        let randomNumber = Math.floor(Math.random() * allChars.length);
+
+        newPassword += allChars[randomNumber];
+      }
     }
     strengthFunction();
     setPassword(newPassword);
   };
 
   const handelClick = () => {
-    const passGen = getPassword();
+    getPassword();
   };
 
   setTimeout(() => {
